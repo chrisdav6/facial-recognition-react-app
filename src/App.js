@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Particles from 'react-particles-js';
 import Navigation from './components/navigation/Navigation';
 import Logo from './components/logo/Logo';
 import Rank from './components/rank/Rank';
@@ -6,10 +7,30 @@ import ImageLinkForm from './components/imageLink/ImageLinkForm';
 import Footer from './components/footer/Footer';
 import './App.css';
 
+const particlesOptions =  {
+  particles: {
+    number: {
+      value: 100,
+      density: {
+        enable: true,
+        value_area: 800
+      } 
+    },
+    line_linked: {
+      shadow: {
+        enable: true,
+        color: "#3CA9D1",
+        blur: 5
+      }
+    }
+  }
+};
+
 class App extends Component {
   render() {
     return (
       <div className="app">
+        <Particles className="particles" params={particlesOptions}/>
         <div className="container">
           <header>
             <Logo />
