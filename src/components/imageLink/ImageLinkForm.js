@@ -4,10 +4,10 @@ import './ImageLinkForm.css';
 const ImageLinkForm = () => {
   return (
     <div className="imageLinkForm">
-      <p class="intro">This magic brain app will detect faces in your pictures! Give it a try, upload a photo!</p>
+      <p class="intro">This magic brain app will detect faces in your pictures. Give it a try!</p>
       <div className="form">
         <input type="text" id="imageUrl" name="imageUrl" placeholder="Enter Image URL"/>
-        <button className="uploadBtn">Upload Image</button>
+        <button className="uploadBtn">Detect!</button>
       </div>
     </div>
   );
