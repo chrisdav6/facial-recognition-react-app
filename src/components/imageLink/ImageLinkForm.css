@@ -12,6 +12,17 @@
   width: 65%;
   display: block;
   margin: 2em auto;
+  border: 1px solid black;
+  background: transparent;
+  transition: .3s;
+}
+
+#imageUrl:focus {
+  background: white;
+}
+
+#imageUrl::placeholder {
+  color: black;
 }
 
 .uploadBtn {
