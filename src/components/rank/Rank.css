@@ -1,0 +1,13 @@
+.rank {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.rankNumber {
+  border: 1px solid black;
+  display: inline-block;
+  margin-top: 0;
+  padding: .5em;
+  font-size: 2.5rem;
+  background: rgba(255,255,255,0.2);
+}
