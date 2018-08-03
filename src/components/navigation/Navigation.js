@@ -4,7 +4,7 @@ import './Navigation.css';
 const Navigation = () => {
   return (
     <nav>
-      <a className="signOutLink">Sign Out</a>
+      <button className="signOutBtn">Sign Out</button>
     </nav>
   );
 };

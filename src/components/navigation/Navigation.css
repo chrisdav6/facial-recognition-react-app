@@ -1,5 +1,6 @@
-.signOutLink {
+.signOutBtn {
   display: inline-block;
+  background: transparent;
   padding: .75em;
   font-size: 1.3rem;
   cursor: pointer;
@@ -7,8 +8,9 @@
   transition: .3s;
 }
 
-.signOutLink:hover {
+.signOutBtn:hover {
   color: black;
   background: white;
   border: 1px solid white;
+  transform: scale(1.1);
 }
