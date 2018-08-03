@@ -3,6 +3,12 @@
   font-size: 1.5rem;
   margin-top: auto;
   margin-bottom: auto;
+  border: 1px solid black;
+  padding: 2em 1em;
+}
+
+.intro {
+  margin: 0;
 }
 
 #imageUrl {
