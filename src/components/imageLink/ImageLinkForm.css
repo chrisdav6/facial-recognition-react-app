@@ -47,8 +47,16 @@
     width: 100%;
   }
 
+  #imageUrl:focus, #imageUrl:hover {
+    transform: none;
+  } 
+
   .uploadBtn {
     width: 100%;
+  }
+
+  .uploadBtn:hover {
+    transform: none;
   }
 }
 

@@ -14,3 +14,9 @@
   border: 1px solid white;
   transform: scale(1.1);
 }
+
+@media (max-width: 600px) {
+  .signOutBtn:hover {
+    transform: none;
+  }
+}
