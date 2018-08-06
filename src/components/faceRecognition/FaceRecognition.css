@@ -1,10 +1,18 @@
 .faceRecognition {
   margin: 2em auto;
-  width: 100%;
   text-align: center;
+  position: relative;
 }
 
 .faceRecognition img {
   width: 500px;
   height: auto;
+}
+
+.bounding-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #149df2 inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
