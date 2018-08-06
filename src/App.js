@@ -27,6 +27,17 @@ const particlesOptions =  {
 };
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      input: ""
+    }
+  }
+
+  onInputChange = (event) => {
+    console.log(event.target.value);
+  };
+
   render() {
     return (
       <div className="app">
@@ -37,7 +48,7 @@ class App extends Component {
             <Navigation />
           </header>
           <Rank />
-          <ImageLinkForm />
+          <ImageLinkForm onInputChange={this.onInputChange}/>
           {/*
           <FaceRecognition />*/}
           <Footer />
