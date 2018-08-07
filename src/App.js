@@ -39,7 +39,8 @@ class App extends Component {
     this.state = {
       input: "",
       imageUrl: "",
-      box: {}
+      box: {},
+      route: "signin"
     }
   }
 
@@ -76,25 +77,39 @@ class App extends Component {
   };
 
   render() {
-    return (
-      <div className="app">
-        <Particles className="particles" params={particlesOptions}/>
-        <div className="container">
-          <header>
-            <Logo />
-            <Navigation />
-          </header>
-          <SignIn />
-          <Rank />
-          <ImageLinkForm 
-            onInputChange={this.onInputChange} 
-            onButtonSubmit={this.onButtonSubmit}
-          />
-          <FaceRecognition box={this.state.box} imageUrl={this.state.imageUrl}/>
-          <Footer />
+    if(this.state.route !== "signin") {
+      return (
+        <div className="app">
+          <Particles className="particles" params={particlesOptions} />
+          <div className="container">
+            <header>
+              <Logo />
+              <Navigation />
+            </header>
+            <Rank />
+            <ImageLinkForm
+              onInputChange={this.onInputChange}
+              onButtonSubmit={this.onButtonSubmit}
+            />
+            <FaceRecognition box={this.state.box} imageUrl={this.state.imageUrl} />
+            <Footer />
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div className="app">
+          <Particles className="particles" params={particlesOptions} />
+          <div className="container">
+            <header>
+              <Logo />
+            </header>
+            <SignIn />
+            <Footer />
+          </div>
+        </div>
+      );
+    }
   }
 }
 
