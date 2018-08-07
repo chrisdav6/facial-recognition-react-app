@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 import Navigation from './components/navigation/Navigation';
+import SignIn from './components/signIn/SignIn';
 import Logo from './components/logo/Logo';
 import Rank from './components/rank/Rank';
 import ImageLinkForm from './components/imageLink/ImageLinkForm';
@@ -83,6 +84,7 @@ class App extends Component {
             <Logo />
             <Navigation />
           </header>
+          <SignIn />
           <Rank />
           <ImageLinkForm 
             onInputChange={this.onInputChange} 

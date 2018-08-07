@@ -16,7 +16,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -25,10 +25,4 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 2em 0;
-}
-
-@media (max-width: 600px) {
-  .container {
-    height: 100%;
-  }
 }
