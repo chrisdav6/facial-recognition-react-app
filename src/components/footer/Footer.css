@@ -5,6 +5,10 @@
   margin-top: auto;
 }
 
+.footer p {
+  margin: 0;
+}
+
 .footerLink {
   transition: .3s;
   color: #39cddb;
