@@ -57,6 +57,10 @@ class App extends Component {
     }
   };
 
+  onRouteChange = (route) => {
+    this.setState({route: route});
+  };
+
   displayFaceBox = (box) => {
     console.log(box);
     this.setState({ box: box });
@@ -84,7 +88,7 @@ class App extends Component {
           <div className="container">
             <header>
               <Logo />
-              <Navigation />
+              <Navigation onRouteChange={this.onRouteChange} />
             </header>
             <Rank />
             <ImageLinkForm
@@ -104,7 +108,7 @@ class App extends Component {
             <header>
               <Logo />
             </header>
-            <SignIn />
+            <SignIn onRouteChange={this.onRouteChange} />
             <Footer />
           </div>
         </div>

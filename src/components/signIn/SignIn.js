@@ -1,7 +1,7 @@
 import React from 'react';
 import './SignIn.css';
 
-const SignIn = () => {
+const SignIn = ({ onRouteChange }) => {
   return (
     <div className="signIn">
       <form>
@@ -13,7 +13,7 @@ const SignIn = () => {
           <label htmlFor="password">Password</label>
           <input className=" formElement" type="password" id="password" name="password"/>
         </div>
-          <button className="signInBtn">Sign In</button>
+          <button className="signInBtn" onClick={() => onRouteChange("home")}>Sign In</button>
       </form>
     </div>
   );
