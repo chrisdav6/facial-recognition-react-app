@@ -3,6 +3,7 @@ import Particles from 'react-particles-js';
 import Clarifai from 'clarifai';
 import Navigation from './components/navigation/Navigation';
 import SignIn from './components/signIn/SignIn';
+import Register from './components/register/Register';
 import Logo from './components/logo/Logo';
 import Rank from './components/rank/Rank';
 import ImageLinkForm from './components/imageLink/ImageLinkForm';
@@ -81,7 +82,7 @@ class App extends Component {
   };
 
   render() {
-    if(this.state.route !== "signin") {
+    if(this.state.route === "home") {
       return (
         <div className="app">
           <Particles className="particles" params={particlesOptions} />
@@ -100,7 +101,7 @@ class App extends Component {
           </div>
         </div>
       );
-    } else {
+    } else if (this.state.route === "signin") {
       return (
         <div className="app">
           <Particles className="particles" params={particlesOptions} />
@@ -109,6 +110,19 @@ class App extends Component {
               <Logo />
             </header>
             <SignIn onRouteChange={this.onRouteChange} />
+            <Footer />
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="app">
+          <Particles className="particles" params={particlesOptions} />
+          <div className="container">
+            <header>
+              <Logo />
+            </header>
+            <Register onRouteChange={this.onRouteChange} />
             <Footer />
           </div>
         </div>

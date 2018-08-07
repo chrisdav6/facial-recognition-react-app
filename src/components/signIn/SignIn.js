@@ -14,7 +14,7 @@ const SignIn = ({ onRouteChange }) => {
           <input className=" formElement" type="password" id="password" name="password"/>
         </div>
         <button className="signInBtn" onClick={() => onRouteChange("home")}>Sign In</button>
-        <button className="newUser">Register New User</button>
+        <button className="newUser" onClick={() => onRouteChange("register")}>Register New User</button>
       </form>
     </div>
   );
