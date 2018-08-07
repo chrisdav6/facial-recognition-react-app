@@ -5,17 +5,15 @@ const Register = ({ onRouteChange }) => {
   return (
     <div className="register">
       <form>
+        <h1>Register</h1>
         <div className="formGroup">
-          <label htmlFor="fullName">Full Name</label>
-          <input className=" formElement" type="text" id="fullName" name="fullName" />
+          <input className=" formElement" type="text" id="fullName" name="fullName" placeholder="Full Name"/>
         </div>
         <div className="formGroup">
-          <label htmlFor="username">Username</label>
-          <input className=" formElement" type="text" id="username" name="username"/>
+          <input className=" formElement" type="text" id="username" name="username" placeholder="Username"/>
         </div>
         <div className="formGroup">
-          <label htmlFor="password">Password</label>
-          <input className=" formElement" type="password" id="password" name="password"/>
+          <input className=" formElement" type="password" id="password" name="password" placeholder="Password"/>
         </div>
         <button className="registerBtn" onClick={() => onRouteChange("home")}>Register</button>
         <button className="allreadyUser" onClick={() => onRouteChange("signin")}>Already a user, Sign In</button>

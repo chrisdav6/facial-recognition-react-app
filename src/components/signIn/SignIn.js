@@ -5,13 +5,12 @@ const SignIn = ({ onRouteChange }) => {
   return (
     <div className="signIn">
       <form>
+        <h1>Sign In</h1>
         <div className="formGroup">
-          <label htmlFor="username">Username</label>
-          <input className=" formElement" type="text" id="username" name="username"/>
+          <input className="formElement useFontAwesomeFamily" type="text" id="username" name="username" placeholder="Username"/>
         </div>
         <div className="formGroup">
-          <label htmlFor="password">Password</label>
-          <input className=" formElement" type="password" id="password" name="password"/>
+          <input className="formElement useFontAwesomeFamily" type="password" id="password" name="password" placeholder="Password"/>
         </div>
         <button className="signInBtn" onClick={() => onRouteChange("home")}>Sign In</button>
         <button className="newUser" onClick={() => onRouteChange("register")}>Register New User</button>
